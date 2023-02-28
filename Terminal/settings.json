@@ -1,0 +1,98 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": 
+    [
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
+                "split": "auto",
+                "action": "splitPane",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+d"
+        }
+    ],
+    "initialCols": 90,
+    "copyOnSelect": false,
+    "copyFormatting": "none",
+    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "profiles": 
+    {
+        "defaults": {},
+        "list": 
+        [
+            {
+                "opacity": 70,
+                "padding": "8",
+                "hidden": false,
+                "useAcrylic": true,
+                "name": "PowerShell",
+                "colorScheme": "Campbell",
+                "commandline": "pwsh.exe -NoLogo",
+                "cursorShape": "doubleUnderscore",
+                "experimental.retroTerminalEffect": false,
+                "source": "Windows.Terminal.PowershellCore",
+                "font": { "face": "FiraCode Nerd Font Mono" },
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+            },
+            {
+                "opacity": 70,
+                "padding": "5",
+                "hidden": false,
+                "useAcrylic": true,
+                "name": "Prompt de comando",
+                "colorScheme": "One Half Dark",
+                "cursorShape": "doubleUnderscore",
+                "experimental.retroTerminalEffect": true,
+                "font": { "face": "FiraCode Nerd Font Mono" },
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "commandline": "%SystemRoot%\\System32\\cmd.exe"
+            }
+        ]
+    },
+    "schemes": 
+    [
+        {
+            "background": "#0C0C0C",
+            "black": "#0C0C0C",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#3B78FF",
+            "brightCyan": "#61D6D6",
+            "brightGreen": "#16C60C",
+            "brightPurple": "#B4009E",
+            "brightRed": "#E74856",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#F9F1A5",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#CCCCCC",
+            "green": "#13A10E",
+            "name": "Miguelacb9",
+            "purple": "#881798",
+            "red": "#C50F1F",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#C19C00"
+        }
+    ],
+    "themes": [],
+    "useAcrylicInTabRow": true
+}
