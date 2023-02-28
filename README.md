@@ -40,6 +40,6 @@ $ git clone https://github.com/dev-macb/braz
 
 <h2 id="licença">📄 Licença</h2>
 <p>
-    O Braz utiliza a <strong>licença MIT</strong> em todo seu código, confira suas condições em <a href="https://github.com/dev-macb/braz/blob/dev/LICENSE.md">LICENSE</a>.
+    O Braz utiliza a <strong>licença MIT</strong> em todo seu código, confira suas condições em <a href="https://github.com/Miguel-acb9/ambiente-trabalho/blob/dev/LICENSE.md">LICENSE</a>.
 </p>
 <p align="center">🔷</p>
