@@ -35,3 +35,23 @@ function novo {
         Write-Host "Exemplo: novo -nome 'nome do arquivo.txt' -conteudo 'Olá Mundo'"
     }
 }
+
+function gg {
+    param([string]$mensagem)
+    try {
+        git add .
+        git commit -m $mensagem
+        git log -1
+        git push
+    }
+    catch {
+        Write-Host "COMMIT RÁPIDO"
+        Write-Host ""
+        Write-Host "Uso: gg <mensagem>"
+        Write-Host "     novo -mensagem '<mensagem>'"
+        Write-Host ""
+        Write-Host "-mensagem       A comentário do commit."
+        Write-Host ""
+        Write-Host "Exemplo: novo -nome 'nome do arquivo.txt' -conteudo 'Olá Mundo'"
+    }
+}
