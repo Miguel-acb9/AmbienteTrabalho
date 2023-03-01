@@ -13,7 +13,7 @@ read_only = '🔒 '
 home_symbol = '🏠'
 truncation_length = 3
 use_os_path_sep = true
-truncation_symbol = '📁/' 
+truncation_symbol = '📁/'
 
 [git_branch]
 format = '[no](#e25d23) [$symbol $branch](#D1D1D1) '
@@ -24,12 +24,12 @@ format     = '$all_status$ahead_behind'
 stashed = '⭕ '
 up_to_date = '' #✅
 conflicted = '⛔ '
-ahead = '🅰️×[${count}](#D1D1D1) '
-behind = '🅱️×[${count}](#D1D1D1) '
-staged = '🆗×[${count}](#D1D1D1) '
+ahead = '⬆️×[${count}](#D1D1D1) '
+behind = '⬇️×[${count}](#D1D1D1) '
+staged = '📦×[${count}](#D1D1D1) '
 renamed = '📛×[${count}](#D1D1D1) '
 deleted = '❌×[${count}](#D1D1D1) '
-modified = '❗×[${count}](#D1D1D1) '
+modified = '📝×[${count}](#D1D1D1) '
 untracked = '❓×[${count}](#D1D1D1) '
 diverged = '⚠️ 🅰️×[${ahead_count}](#D1D1D1) 🅱️×[${behind_count}](#D1D1D1) '
 
@@ -50,7 +50,6 @@ symbol= '📦 '
 success_symbol = '[❯](bold blue)'
 error_symbol = '[❯](bold red)'
 
-# Outros
 [battery]
 full_symbol = '🔋'
 charging_symbol = '🔌'
