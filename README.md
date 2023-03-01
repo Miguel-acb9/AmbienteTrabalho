@@ -29,17 +29,17 @@
 <p>
     Para clonar o projeto para sua máquina via <a target="_blank" href="https://git-scm.com/">git</a>, execute os comandos a seguir:
 </p>
-    
+
 ```bash
 $ mkdir braz && cd braz
 $ git clone https://github.com/dev-macb/braz
-``` 
+```
 <p align="center">🔷</p>
 
 
 
 <h2 id="licença">📄 Licença</h2>
 <p>
-    O Braz utiliza a <strong>licença MIT</strong> em todo seu código, confira suas condições em <a href="https://github.com/Miguel-acb9/ambiente-trabalho/blob/main/LICENSE">LICENSE</a>.
+    O repositório <strong>AmbienteTrabalho</strong> utiliza a <strong>licença MIT</strong> em todo seu código, confira suas condições em <a href="https://github.com/Miguel-acb9/ambiente-trabalho/blob/main/LICENSE">LICENSE</a>.
 </p>
 <p align="center">🔷</p>
