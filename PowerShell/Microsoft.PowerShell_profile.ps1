@@ -36,16 +36,31 @@ function novo {
     }
 }
 
-function gg {
+function gg() {
     param([string]$mensagem)
     try {
+        Write-Host ""
+        Write-Host "COMMIT RÁPIDO" -ForegroundColor Green
+        Write-Host "------ ------" -ForegroundColor Green
+        imprimir_msg "Status atual do repositório: " -nova_linha 1
+        git status -s
+        Write-Host ""
+        imprimir_msg "Adicionando todos os arquivos alterados para o commit... " -nova_linha 0
         git add .
+        imprimir_ok
+        imprimir_msg "Realizando o commit... "  -nova_linha 1
         git commit -m $mensagem
+        Write-Host "    ✅ Commit realizado!" -ForegroundColor Green
+        Write-Host ""
+        imprimir_msg "Último histórico de commit realizado: "  -nova_linha 1
         git log -1
+        Write-Host ""
+        imprimir_msg "Enviando conteúdo local para o repositório remoto... " -nova_linha 1
         git push
+        Write-Host "    ✅ Arquivos enviados!" -ForegroundColor Green
     }
     catch {
-        Write-Host "COMMIT RÁPIDO"
+        Write-Host "COMMIT RÁPIDO" -ForegroundColor Gray
         Write-Host ""
         Write-Host "Uso: gg <mensagem>"
         Write-Host "     novo -mensagem '<mensagem>'"
@@ -54,4 +69,18 @@ function gg {
         Write-Host ""
         Write-Host "Exemplo: novo -nome 'nome do arquivo.txt' -conteudo 'Olá Mundo'"
     }
+}
+
+
+function imprimir_msg {
+    param([string]$mensagem, [bool]$nova_linha)
+    Write-Host "[" -ForegroundColor Gray -NoNewline;
+    Write-Host "*" -ForegroundColor Green -NoNewline;
+    Write-Host "] $mensagem" -ForegroundColor Gray -NoNewline;
+    if ($nova_linha) { Write-Host "" }
+}
+
+function imprimir_ok {
+    Write-Host "OK" -ForegroundColor Green;
+    Write-Host ""
 }
