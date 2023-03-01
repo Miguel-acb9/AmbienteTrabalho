@@ -15,10 +15,19 @@ function dev {
     }
     Get-ChildItem
 }
+function xx {
+    param([Parameter(Mandatory=$true)] [string]$caminho)
+    try {
+        Remove-Item -Path $caminho -Recurse -Force
+        imprimir_msg "Pasta excluida com êxito!" -nova_linha 1
+    } 
+    catch {
+        imprimir_msg "Erro ao excluir pasta!" -nova_linha 1
+    }
+}
 
 function novo {
     param([string]$nome, [string]$conteudo)
-
     try {
         New-Item -ItemType File $nome
         Set-Content -Path $nome -Value $conteudo
