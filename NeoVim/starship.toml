@@ -22,7 +22,7 @@ symbol = ''
 [git_status]
 format     = '$all_status$ahead_behind'
 stashed = '⭕ '
-#up_to_date = '✅ '
+up_to_date = '' #✅
 conflicted = '⛔ '
 ahead = '🅰️×[${count}](#D1D1D1) '
 behind = '🅱️×[${count}](#D1D1D1) '
