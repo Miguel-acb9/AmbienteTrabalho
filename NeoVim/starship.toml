@@ -1,102 +1,66 @@
-# Modelo 1
-format = '''$username$directory$nodejs$character'''
+format = '''$username$directory$git_branch$git_status$package$nodejs$character'''
 
 [username]
-format = '[Δ](blue) [$user]($style) '
+format = '[Δ](#e25d23 bold) [$user]($style) '
 disabled = false
 show_always = true
-style_user = 'white bold'
 style_root = 'red bold'
+style_user = 'white bold'
 
 [directory]
-format = '[em](blue) $read_only[$path](white) '
-truncation_length = 3
-truncation_symbol = '…/' 
-home_symbol = '🏠'
+format = '[em](#e25d23) $read_only[$path](#D1D1D1) '
 read_only = '🔒 '
+home_symbol = '🏠'
+truncation_length = 3
 use_os_path_sep = true
+truncation_symbol = '📁/' 
+
+[git_branch]
+format = '[no](#e25d23) [$symbol $branch](#D1D1D1) '
+symbol = ''
+
+[git_status]
+format     = '$all_status$ahead_behind'
+stashed = '⭕ '
+#up_to_date = '✅ '
+conflicted = '⛔ '
+ahead = '🅰️×[${count}](#D1D1D1) '
+behind = '🅱️×[${count}](#D1D1D1) '
+staged = '🆗×[${count}](#D1D1D1) '
+renamed = '📛×[${count}](#D1D1D1) '
+deleted = '❌×[${count}](#D1D1D1) '
+modified = '❗×[${count}](#D1D1D1) '
+untracked = '❓×[${count}](#D1D1D1) '
+diverged = '⚠️ 🅰️×[${ahead_count}](#D1D1D1) 🅱️×[${behind_count}](#D1D1D1) '
+
+[nodejs]
+format = '[via](#e25d23) [$symbol$version](#D1D1D1) '
+symbol= '🤖 '
+version_format = 'v${raw}'
+
+[python]
+format = '[$symbol$version]($style) '
+style = 'bold green'
+
+[package]
+format = '[é](#e25d23) [$symbol$version](#D1D1D1) '
+symbol= '📦 '
 
 [character]
 success_symbol = '[❯](bold blue)'
 error_symbol = '[❯](bold red)'
 
-
-
-
-
-
-
-
+# Outros
 [battery]
-full_symbol = "🔋"
-charging_symbol = "🔌"
-discharging_symbol = "⚡"
+full_symbol = '🔋'
+charging_symbol = '🔌'
+discharging_symbol = '⚡'
 
 [[battery.display]]
 threshold = 30
-style = "bold red"
+style = 'bold red'
 
 
 [cmd_duration]
 min_time = 10_000  # Show command duration over 10,000 milliseconds (=10 sec)
-format = " took [$duration]($style)"
-
-
-[git_branch]
-format = " [$symbol$branch]($style) "
-symbol = "🍣 "
-style = "bold yellow"
-
-[git_commit]
-commit_hash_length = 8
-style = "bold white"
-
-[git_state]
-format = '[\($state( $progress_current of $progress_total)\)]($style) '
-
-[git_status]
-conflicted = "⚔️ "
-ahead = "🏎️ 💨 ×${count}"
-behind = "🐢 ×${count}"
-diverged = "🔱 🏎️ 💨 ×${ahead_count} 🐢 ×${behind_count}"
-untracked = "🛤️  ×${count}"
-stashed = "📦 "
-modified = "📝 ×${count}"
-staged = "🗃️  ×${count}"
-renamed = "📛 ×${count}"
-deleted = "🗑️  ×${count}"
-style = "bright-white"
-format = "$all_status$ahead_behind"
-
-
-
-
-
-[memory_usage]
-format = "$symbol[${ram}( | ${swap})]($style) "
-threshold = 70
-style = "bold dimmed white"
-disabled = false
-
-[package]
-disabled = true
-
-[python]
-format = "[$symbol$version]($style) "
-style = "bold green"
-
-
-
-[time]
-time_format = "%T"
-format = "🕙 $time($style) "
-style = "bright-white"
-disabled = false
-
-
-
-[nodejs]
-format = "[via](blue) [$symbol$version](bold green) "
-symbol= '🤖 '
-version_format = 'v${raw}'
-
+format = ' took [$duration]($style)'
