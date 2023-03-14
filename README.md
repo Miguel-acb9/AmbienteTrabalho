@@ -18,8 +18,11 @@
 
 <h2 id="objetivo">🎯 Objetivo</h2>
 <p>
-    Este repositório tem como objetivo
-    armazenar arquivos de configuração e scripts do meu ambiente de trabalho.
+    Este repositório contém os arquivos de configuração do meu ambiente de desenvolvimento pessoal, incluindo arquivos de configuração para 
+    diversas ferramentas que utilizo, como meu editor de código, terminal, shells, e outras configurações personalizadas que aprimoram minha 
+    produtividade no dia-a-dia. Manter esses arquivos em um repositório me permite sincronizá-los facilmente em diferentes dispositivos e 
+    garantir que minhas configurações permaneçam consistentes em todas as máquinas em que trabalho. Sinta-se livre para utilizar esses arquivos 
+    como base para suas próprias configurações pessoais de desenvolvimento.
 </p>
 <p align="center">🔷</p>
 
